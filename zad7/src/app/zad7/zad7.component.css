@@ -1,0 +1,23 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.najdrozszy{
+    border:greenyellow solid 5px;
+}
+.najtanszy{
+    border:red solid 5px;
+}
+.item{
+    width:500px;
+    height:600px;
+    margin:50px;
+}
+.counter{
+    margin:0 0 0 45%;
+    width: 100px;
+    height: 80px;
+    text-align: center;
+    font-size: 64px;
+}

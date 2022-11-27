@@ -1,0 +1,9 @@
+<div class="counter" [ngStyle]="{'background-color':whatColor()}">{{numberOfWycieczki}}</div>
+<div class="container">
+    <div *ngFor="let pojWycieczka of wycieczki, index as i">
+        <div *ngIf="listOfWycieczki[i]"[ngClass]="{'item':true,'najtanszy':isnajtanszy(pojWycieczka), 'najdrozszy':isnajdrozszy(pojWycieczka)}">
+            <zad7-child [wycieczka]="pojWycieczka" (newItemEvent)="add($event)"></zad7-child>
+            <button (click)="handleclick(i)">usuń</button>
+        </div>
+    </div>
+</div>

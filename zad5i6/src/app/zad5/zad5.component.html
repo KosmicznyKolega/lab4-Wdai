@@ -1,0 +1,28 @@
+<h3>Wybierz markę samochodu</h3>
+<div class="container">
+    <div class="container1">
+        {{unique()}}
+        <div class="container">
+            <div *ngFor="let item of marki" class="item" (click)="handleclick1(item)">
+                <div> {{item}}</div>
+            </div>
+        </div>
+        <div *ngIf="showmarka" class="container">
+            <div *ngFor="let item2 of carData">
+                <div *ngIf="item2.marka==marka" class="item" (click)="handleclick2(item2.model)"> 
+                    {{item2.model}}
+                </div>
+            </div>
+        </div>
+        <div *ngIf="showmodel" class="container">
+            <div *ngFor="let item3 of carData">
+                <div *ngIf="item3.marka==marka&&item3.model==model"> 
+                    <div *ngFor="let item4 of item3.kolor"  class="item" (click)="handleclick3(item4)">
+                        {{item4}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<p [hidden]="!showmarka||!showmodel||!showkolor">Twój wybór to: {{marka}} ,model: {{model}}, koloru: {{kolor}}</p>

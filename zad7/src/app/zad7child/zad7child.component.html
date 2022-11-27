@@ -1,0 +1,20 @@
+<div class="container">
+    <h3>{{wycieczka.nazwa | uppercase}}</h3>
+    <div class="date">{{wycieczka.start}} - {{wycieczka.koniec}}</div>
+    <img src={{wycieczka.zdjecie}}>
+    <div>Kraj: {{wycieczka.krajdocelowy | uppercase}}</div>
+    <hr>
+    <p>{{wycieczka.opis}}</p>
+    <hr>
+    <div class="container2" *ngIf="saMiejsca">
+        <div class="cena">{{wycieczka.cena| currency :'PLN':'symbol'}}</div>
+        <div class="plus" (click)="plus()">+</div>
+        <div class="black" [ngStyle]="{'color': getColor()}">{{iloscMiejscTeraz}}</div>
+        <div class="minus" *ngIf="czyKupiono" (click)="minus()">-</div>
+    </div>
+    <div class="container2" *ngIf="!saMiejsca">
+        <div class="cena">{{wycieczka.cena | currency :'PLN'}}</div>
+        <div class="red"> brak miejsc</div>
+        <div class="minus" *ngIf="czyKupiono" (click)="minus()">-</div>        
+    </div>
+</div>

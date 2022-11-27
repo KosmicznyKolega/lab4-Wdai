@@ -1,0 +1,35 @@
+
+<div class="container1">
+    <div *ngIf="clicked1">
+        <h3>Temat1</h3>
+        <p>jakis bardzo ciekawy tekst o temacie1</p>
+    </div>
+    <div *ngIf="clicked2">
+        <h3>Temat2</h3>
+        <p>bardziej ciekawy tekst o temacie2</p>
+        
+    </div>
+    <div *ngIf="clicked3">
+        <h3>Temat3</h3>
+        <p>najbardziej ciekawy tekst o temacie3</p>
+
+    </div>
+</div>
+
+<div class="container2">
+    <div class="item">
+        <h3>temat1</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, adipisci. Non deserunt culpa dolores natus exercitationem dolore nemo, eveniet aut?</p>
+        <button (click)="handleClick1()">learn more</button>
+    </div>
+    <div class="item">    
+        <h3>temat2</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, adipisci. Non deserunt culpa dolores natus exercitationem dolore nemo, eveniet aut?</p>
+        <button (click)="handleClick2()">learn more</button>
+    </div>
+    <div class="item">    
+        <h3>temat3</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, adipisci. Non deserunt culpa dolores natus exercitationem dolore nemo, eveniet aut?</p>
+        <button (click)="handleClick3()">learn more</button>
+    </div>
+</div>

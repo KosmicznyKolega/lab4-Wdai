@@ -1,0 +1,46 @@
+[
+    {
+        "marka":"Kia",
+        "model":"Ceed", 
+        "kolor":["biały", "srebrny", "niebieski"]
+    },
+    {
+        "marka":"Kia",
+        "model":"Niro",
+        "kolor":["srebrny", "niebieski"]
+    },
+    {
+        "marka":"Kia",
+        "model":"Stinger",
+        "kolor":["czerwony"]
+    },
+    {
+        "marka":"Opel",
+        "model":"Corsa",
+        "kolor":["pomarańczowy","czerwony","srebrny","złoty"]
+    },
+    {
+        "marka":"Opel",
+        "model":"Astra",
+        "kolor":["żółty","srebrny","czerwony","niebieski","czarny"]
+    },
+    {
+        "marka":"Toyota",
+        "model":"Corolla",
+        "kolor":["srebrny","biały","czarny"]
+    },
+    {
+        "marka":"Toyota",        
+        "model":"Supra",
+        "kolor":["srebrny","biały","czarny"]
+    },
+    {
+        "marka":"BMW",
+        "model":"1",
+        "kolor":["niebieski","biały","czerwony"]
+    },
+    {
+        "marka":"BMW",
+        "model":"X3",
+        "kolor":["niebieski","biały","czarny"]
+    }]
